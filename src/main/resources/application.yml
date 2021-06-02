@@ -1,0 +1,25 @@
+server:
+  port: 8083
+network:
+  #定时任务执行间隔时间单位毫秒 默认5s
+  fix_time: 30000
+  #断网之后重试次数
+  try_num: 3
+  #管理员手机号,当岗亭网络发生异常时短信发送短信通知,多个手机号之间用英文","隔开
+  phones: 18851815112
+  #岗亭配置的网卡ip,多个ip之间用英文","隔开
+  ips: 192.168.1.132,192.168.0.179
+  #停车场名称
+  park_name: 测试停车场
+  url: http://t.cms.hjcpay.com//sms/sendSms
+  warning: 8
+  restore: 7
+logging:
+  file:
+    # 日志文件目录，根据实际情况修改
+    path: C:\hjc\network
+  level:
+    root: info
+spring:
+  application:
+    name: network
