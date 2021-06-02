@@ -11,7 +11,7 @@ network:
   ips: 192.168.1.132,192.168.0.179
   #停车场名称
   park_name: 测试停车场
-  url: http://t.cms.hjcpay.com//sms/sendSms
+  url: http://*******//sms/sendSms
   warning: 8
   restore: 7
 logging:
